@@ -1,0 +1,12 @@
+{
+  "name": "meganet",
+  "version": "1.0.0",
+  "description": "Built By @realsolooo and @superscrxbble",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^30.0.0"
+  }
+}
