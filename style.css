@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #111;
+  color: white;
+}
+
+#bar {
+  display: flex;
+  padding: 10px;
+  background: #222;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  font-size: 1em;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background: #444;
+  color: white;
+  cursor: pointer;
+}
+
+iframe {
+  width: 100%;
+  height: calc(100vh - 50px);
+  border: none;
+}
