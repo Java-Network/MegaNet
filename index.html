@@ -6,12 +6,27 @@
   <title>MegaNet</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div id="bar">
-    <input type="text" id="url" placeholder="Enter URL (e.g., https://example.com)" />
-    <button onclick="loadSite()">Go</button>
+<body class="dark-theme">
+  <div id="topbar">
+    <div id="bar">
+      <input type="text" id="url" placeholder="Enter URL or Search Term" />
+      <select id="engine">
+        <option value="duckduckgo">DuckDuckGo</option>
+        <option value="bing">Bing</option>
+        <option value="brave">Brave</option>
+      </select>
+      <button onclick="goToURL()">Go</button>
+      <button onclick="searchQuery()">Search</button>
+      <button onclick="refreshTab()">Refresh</button>
+      <button onclick="toggleTheme()">Theme</button>
+      <label>
+        <input type="checkbox" id="proxyToggle"> Proxy
+      </label>
+    </div>
+    <div id="tabs"></div>
   </div>
-  <iframe id="browserFrame" src=""></iframe>
+  <div id="iframe-container"></div>
+
   <script src="script.js"></script>
 </body>
 </html>
